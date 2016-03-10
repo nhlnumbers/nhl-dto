@@ -1,0 +1,53 @@
+{
+    "name": "nhlnumbers/dto",
+    "description": "DTO between NHLNumbers App and NHLNumbers Data Aggregator (nhl-data-manager project)",
+    "authors": [
+        {
+            "name": "Allan G. Ramirez",
+            "email": "ramirezag@gmail.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://162.250.168.150:8080/packagist"
+        },
+        {
+            "packagist": false
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "laravel/framework": "5.0.*",
+        "moodev/weasel": "0.17"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0",
+        "phpspec/phpspec": "~2.1",
+        "mockery/mockery": "0.9.*@dev",
+        "hamcrest/hamcrest-php": "dev-master"
+    },
+    "provide": {
+        "moodev/weasel": "0.17"
+    },
+    "autoload": {
+        "psr-4": {
+            "NHLNumbers\\Dto\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NHLNumbers\\Dto\\": "src/",
+            "NHLNumbers\\Dto\\": "tests/"
+        }
+    },
+    "archive": {
+        "exclude": [
+            ".idea/*",
+            ".directory",
+            "tests",
+            ".gitignore",
+            "notes.txt"
+        ]
+    }
+}

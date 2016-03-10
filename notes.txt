@@ -1,0 +1,2 @@
+## JSON Notes
+This project uses php-weasol to serialize/deserialize objects. For tutorials on how to serialize/deserialize, see Weasel\JsonMarshaller\JsonMapperTest in php-weasel under vendor.
